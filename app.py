@@ -37,7 +37,7 @@ with gr.Blocks(title="Skryba - AI-powered tool to transcribes and summarizes you
         clear_button = gr.ClearButton(icon="static/icons/clear.png")
         process_button = gr.Button(icon="static/icons/process.png")
 
-    process_button.click(process, inputs=[input, language, temperature, top_p, max_output_tokens], outputs=[summary, file])
+    process_button.click(process, inputs=[input_audio, input_youtube, language, temperature, top_p, max_output_tokens], outputs=[summary, file])
     clear_button.click(lambda: [None, None, None], outputs=[input, summary, file])
 
 if __name__ == "__main__":
