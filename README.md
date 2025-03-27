@@ -51,7 +51,7 @@ print(summary)
 Launch the interface:
 
 ```bash
-python app.py
+python main.py
 ```
 
 You will be able to:
@@ -74,7 +74,7 @@ You will be able to:
 ```bash
 skryba/
 ├── skryba.py               # Main logic (download, transcribe, summarize)
-├── app.py                  # Gradio-based web UI
+├── main.py                  # Gradio-based web UI
 ├── requirements.txt        # Dependencies
 ├── .env                    # Environment variables
 ├── temp/                   # Folder for temporary transcription/audio files
