@@ -1,0 +1,4 @@
+gradio
+dotenv
+openai
+yt_dlp
