@@ -1,8 +1,9 @@
 import os
-from dotenv import load_dotenv
+os.environ["PATH"] += os.pathsep + r"C:\ffmpeg\bin"
+from pydub import AudioSegment
 import gradio as gr
 from skryba import Scryba
-
+from dotenv import load_dotenv
 load_dotenv()
 
 def process(input_audio, input_youtube, language, temperature, top_p, max_output_tokens):

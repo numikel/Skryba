@@ -1,16 +1,18 @@
 # 🧠 Skryba
 
-**Skryba** is a simple AI-powered Python tool that transcribes and summarizes audio files or YouTube videos using OpenAI’s Whisper and GPT-4o(-mini) models.
+**Skryba** is an AI-powered Python tool that transcribes and summarizes audio files or YouTube videos using OpenAI’s Whisper and GPT-4o(-mini).  
+It's useful for processing meeting recordings, lectures, educational videos, and voice notes — either from your device or directly from YouTube.
 
 ---
 
 ## 🚀 Features
 
-- ✅ Transcribes `.mp3` files via OpenAI Whisper  
-- ✅ Supports direct transcription from YouTube links — no `ffmpeg` required  
-- ✅ Summarizes content in **Polish** or **English** using `gpt-4o-mini`  
-- ✅ Automatically saves the transcription to a `.txt` file  
-- ✅ Includes an easy-to-use Gradio web interface  
+- ✅ Transcribes `.mp3` and other audio files  
+- ✅ Supports direct transcription from YouTube links (no pre-download needed)  
+- ✅ Summarizes in **Polish** or **English** using `gpt-4o-mini` or other choosen model 
+- ✅ Saves transcription to a `.txt` file  
+- ✅ Easy-to-use Gradio web interface  
+- ✅ Supports recording via browser microphone (requires `ffmpeg`)  
 
 ---
 
@@ -59,13 +61,29 @@ You will be able to:
 2) Choose output language and adjust summarization parameters
 3) View the summary and download the transcription
 
+🎤 Microphone support requires ffmpeg
+To use microphone recording in the Gradio web UI, ffmpeg must be installed and available in your system PATH.
+
+🔧 Download it from:
+https://www.gyan.dev/ffmpeg/builds/
+
+After downloading:
+1) Extract it (e.g., to `C:\ffmpeg`)
+2) Add `C:\ffmpeg\bin` to your system environment variable PATH
+3) Restart your terminal
+4) You can test installation by running:
+
+```bash
+ffmpeg -version
+```
+
 ## ⚙️ Parameters
 | Parameter           | Description                                        | Default         |
 |--------------------|----------------------------------------------------|-----------------|
 | `audio_path`        | Path to a local audio file                         | `None`          |
 | `youtube_path`      | YouTube URL for downloading audio and transcribing | `None`          |
 | `language`          | Output language for the summary                    | `"polish"`      |
-| `temperature`       | Controls randomness of the model's response        | `0.3`           |
+| `temperature`       | Controls randomness of the model's response        | `0.2`           |
 | `top_p`             | Nucleus sampling parameter                         | `0.9`           |
 | `max_output_tokens` | Maximum length of the generated summary (tokens)   | `500`           |
 | `model`             | OpenAI model used for summarization                | `"gpt-4o-mini"` |
