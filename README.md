@@ -6,7 +6,7 @@
 
 ## 🚀 Features
 
-- ✅ Transcribes `.mp3`, `.webm` and other audio files via OpenAI Whisper  
+- ✅ Transcribes `.mp3` files via OpenAI Whisper  
 - ✅ Supports direct transcription from YouTube links — no `ffmpeg` required  
 - ✅ Summarizes content in **Polish** or **English** using `gpt-4o-mini`  
 - ✅ Automatically saves the transcription to a `.txt` file  
