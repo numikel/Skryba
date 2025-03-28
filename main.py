@@ -26,7 +26,7 @@ with gr.Blocks(title="Skryba - AI-powered tool to transcribes and summarizes you
                     input_youtube = gr.TextArea(label="Paste youtube link")
             with gr.Tab(label="Additional settings"):
                 with gr.Group():
-                    model = gr.Dropdown(choices=["gpt-4o-mini", "gpt-4o"], label="GPT model")
+                    model = gr.Dropdown(choices=["gpt-4o-mini", "gpt-4o", "gpt-4", "gpt-4-turbo", "gpt-3.5-turbo"], label="GPT model")
                     language = gr.Radio(["Polish", "English"], value="Polish", label="Output language")
                     max_output_tokens = gr.Number(value=500, label="Maximum output tokens", minimum=1, maximum=1000)  
                     temperature = gr.Slider(value=0.3, label="Temperature", minimum=0.0, maximum=1.0, step=0.1)
