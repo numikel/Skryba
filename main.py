@@ -19,7 +19,7 @@ with gr.Blocks(title="Skryba - AI-powered tool to transcribes and summarizes you
         with gr.Column():
             with gr.Tab(label="Input"):
                 with gr.Group():
-                    input_audio = gr.Audio(type="filepath", label="Upload or record an audio file", format=["mp3","webm"], editable=False)
+                    input_audio = gr.Audio(type="filepath", label="Upload or record an audio file", editable=False)
             with gr.Tab(label="Youtube"):
                 with gr.Group():
                     input_youtube = gr.TextArea(label="Paste youtube link")
