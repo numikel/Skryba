@@ -83,7 +83,7 @@ ffmpeg -version
 | `audio_path`        | Path to a local audio file                         | `None`          |
 | `youtube_path`      | YouTube URL for downloading audio and transcribing | `None`          |
 | `language`          | Output language for the summary                    | `"polish"`      |
-| `temperature`       | Controls randomness of the model's response        | `0.2`           |
+| `temperature`       | Controls randomness of the model's response        | `0.3`           |
 | `top_p`             | Nucleus sampling parameter                         | `0.9`           |
 | `max_output_tokens` | Maximum length of the generated summary (tokens)   | `500`           |
 | `model`             | OpenAI model used for summarization                | `"gpt-4o-mini"` |

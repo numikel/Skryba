@@ -28,7 +28,7 @@ with gr.Blocks(title="Skryba - AI-powered tool to transcribes and summarizes you
                 with gr.Group():
                     language = gr.Radio(["Polish", "English"], value="Polish", label="Output language")
                     max_output_tokens = gr.Number(value=500, label="Maximum output tokens", minimum=1, maximum=1000)  
-                    temperature = gr.Slider(value=0.2, label="Temperature", minimum=0.0, maximum=1.0, step=0.1)
+                    temperature = gr.Slider(value=0.3, label="Temperature", minimum=0.0, maximum=1.0, step=0.1)
                     top_p = gr.Slider(value=0.9, label="Top P", minimum=0.1, maximum=1.0, step=0.1)
         with gr.Column():
             with gr.Tab(label="Summary"):
